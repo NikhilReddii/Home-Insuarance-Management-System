@@ -50,3 +50,49 @@
 2021-04-15 06:36:38,272 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-10] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,policyholder Login Successful,[]>
 2021-04-15 06:39:40,611 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-2] Entering method : com.cg.hims.controller.LoginController.AuthenticateUser() with argument[s] = [deek, nobita@1aa]
 2021-04-15 06:39:40,663 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-2] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,agent Login Successful,[]>
+2021-04-15 10:27:25,271 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DESKTOP-CG71B0F with PID 22544 (D:\Home-Insurance-Management-System\target\classes started by 91949 in D:\Home-Insurance-Management-System)
+2021-04-15 10:27:25,275 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-04-15 10:27:25,275 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-04-15 10:27:25,324 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-15 10:27:25,324 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-15 10:27:26,321 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-15 10:27:26,395 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 64 ms. Found 7 JPA repository interfaces.
+2021-04-15 10:27:27,556 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-04-15 10:27:27,566 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-04-15 10:27:27,568 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-04-15 10:27:27,568 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-04-15 10:27:27,645 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-04-15 10:27:27,645 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2320 ms
+2021-04-15 10:27:27,986 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-15 10:27:28,051 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-04-15 10:27:28,243 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-15 10:27:28,369 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-04-15 10:27:28,881 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-04-15 10:27:28,919 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-04-15 10:27:30,061 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-15 10:27:30,069 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-15 10:27:30,084 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-04-15 10:27:31,503 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-15 10:27:31,758 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-04-15 10:27:32,578 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-04-15 10:27:32,651 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-04-15 10:27:33,610 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 8.618 seconds (JVM running for 9.177)
+2021-04-15 10:27:45,197 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-15 10:27:45,197 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-15 10:27:45,202 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Completed initialization in 5 ms
+2021-04-15 10:27:45,307 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-1] Entering method : com.cg.hims.controller.LoginController.AuthenticateUser() with argument[s] = [Bindu, himabindu]
+2021-04-15 10:27:45,462 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-1] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,Wrong password,[]>
+2021-04-15 10:29:58,089 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-3] Entering method : com.cg.hims.controller.LoginController.AuthenticateUser() with argument[s] = [Bindu, himabindu]
+2021-04-15 10:29:58,109 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-3] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,Wrong password,[]>
+2021-04-15 10:30:30,571 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-5] Entering method : com.cg.hims.controller.LoginController.AuthenticateUser() with argument[s] = [Bindu, hinabindu]
+2021-04-15 10:30:30,593 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-5] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,agent Login Successful,[]>
+2021-04-15 11:02:06,129 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-7] Entering method : com.cg.hims.controller.LoginController.AuthenticateUser() with argument[s] = [Nikhil, Nikhil12@]
+2021-04-15 11:02:06,273 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-7] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,admin Login Successful,[]>
+2021-04-15 11:02:39,292 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-9] Entering method : com.cg.hims.controller.LoginController.AuthenticateUser() with argument[s] = [RamSree, RamSree1@]
+2021-04-15 11:02:39,397 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-9] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,agent Login Successful,[]>
+2021-04-15 11:03:29,399 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-10] Entering method : com.cg.hims.controller.LoginController.AuthenticateUser() with argument[s] = [Nikhil, nikhil12@]
+2021-04-15 11:03:29,412 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-10] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,Wrong password,[]>
+2021-04-15 11:03:46,152 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-1] Entering method : com.cg.hims.controller.LoginController.AuthenticateUser() with argument[s] = [Nikhil, Nikhil12@]
+2021-04-15 11:03:46,164 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-1] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,admin Login Successful,[]>
+2021-04-15 11:06:24,620 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-4] Entering method : com.cg.hims.controller.LoginController.changePassword() with argument[s] = [Nikhil, Nikhil123@]
+2021-04-15 11:06:24,688 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-4] Exiting method: com.cg.hims.controller.LoginController.changePassword() with result = <200 OK OK,Password changed!,[]>
