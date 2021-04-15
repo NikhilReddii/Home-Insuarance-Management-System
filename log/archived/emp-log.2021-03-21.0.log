@@ -1,0 +1,585 @@
+2021-03-21 17:49:35,583 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 6244 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 17:49:35,586 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 17:49:35,587 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 17:49:35,655 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-21 17:49:35,655 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-21 17:49:36,597 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 17:49:36,677 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 71 ms. Found 7 JPA repository interfaces.
+2021-03-21 17:49:37,399 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webMvcObjectMapperConfigurer' defined in springfox.documentation.spring.web.SpringfoxWebMvcConfiguration: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.cg.hims.controller.UserController [Xlint:invalidAbsoluteTypeName]
+2021-03-21 17:49:37,412 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-21 17:49:37,429 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webMvcObjectMapperConfigurer' defined in springfox.documentation.spring.web.SpringfoxWebMvcConfiguration: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.cg.hims.controller.UserController [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:566)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cg.hims.application.HomeInsuranceManagementSystemApplication.main(HomeInsuranceManagementSystemApplication.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.cg.hims.controller.UserController [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:610)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:410)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1142)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1117)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:513)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.cg.hims.controller.UserController [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:337)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:437)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	... 42 common frames omitted
+2021-03-21 17:52:49,220 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 26044 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 17:52:49,222 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 17:52:49,223 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 17:52:49,286 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-21 17:52:49,286 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-21 17:52:50,201 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 17:52:50,269 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 60 ms. Found 7 JPA repository interfaces.
+2021-03-21 17:52:51,367 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 17:52:51,381 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 17:52:51,382 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 17:52:51,382 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 17:52:51,468 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 17:52:51,468 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2181 ms
+2021-03-21 17:52:51,815 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 17:52:51,882 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-21 17:52:52,037 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-21 17:52:52,163 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-21 17:52:52,618 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-21 17:52:52,669 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 17:52:53,855 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 17:52:53,862 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 17:52:53,873 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 17:52:54,835 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 17:52:55,058 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-21 17:52:55,512 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-03-21 17:52:55,538 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-03-21 17:52:56,079 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 7.188 seconds (JVM running for 7.699)
+2021-03-21 17:55:52,214 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 17:55:52,217 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2021-03-21 17:55:52,225 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2021-03-21 17:55:52,441 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 26044 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 17:55:52,442 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 17:55:52,442 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 17:55:52,896 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 17:55:52,927 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 30 ms. Found 7 JPA repository interfaces.
+2021-03-21 17:55:53,139 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 17:55:53,140 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 17:55:53,140 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 17:55:53,140 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 17:55:53,155 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 17:55:53,155 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 708 ms
+2021-03-21 17:55:53,210 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 17:55:53,215 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-03-21 17:55:53,262 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-03-21 17:55:53,263 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 17:55:53,815 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 17:55:53,815 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 17:55:53,822 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 17:55:54,113 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 17:55:54,194 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-21 17:55:54,319 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-03-21 17:55:54,322 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-03-21 17:55:54,470 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 2.074 seconds (JVM running for 186.09)
+2021-03-21 17:55:54,472 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-21 17:57:09,912 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 30076 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 17:57:09,914 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 17:57:09,915 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 17:57:09,974 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-21 17:57:09,974 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-21 17:57:10,910 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 17:57:10,985 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 66 ms. Found 7 JPA repository interfaces.
+2021-03-21 17:57:12,213 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 17:57:12,225 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 17:57:12,226 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 17:57:12,227 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 17:57:12,315 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 17:57:12,315 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2341 ms
+2021-03-21 17:57:12,635 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 17:57:12,703 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-21 17:57:12,821 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-21 17:57:12,903 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-21 17:57:13,314 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-21 17:57:13,359 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 17:57:14,595 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 17:57:14,602 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 17:57:14,613 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 17:57:15,601 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 17:57:15,815 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-21 17:57:16,217 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-03-21 17:57:16,239 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-03-21 17:57:16,664 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 7.056 seconds (JVM running for 7.583)
+2021-03-21 18:01:09,972 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 30704 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 18:01:09,974 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 18:01:09,975 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 18:01:10,039 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-21 18:01:10,039 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-21 18:01:10,916 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 18:01:10,991 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 68 ms. Found 7 JPA repository interfaces.
+2021-03-21 18:01:12,396 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 18:01:12,408 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:01:12,409 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 18:01:12,409 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 18:01:12,510 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 18:01:12,510 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2470 ms
+2021-03-21 18:01:12,925 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 18:01:12,995 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-21 18:01:13,157 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-21 18:01:13,246 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-21 18:01:13,699 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-21 18:01:13,747 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 18:01:15,023 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 18:01:15,033 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 18:01:15,048 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 18:01:16,111 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 18:01:16,334 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-21 18:01:16,806 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:01:16,833 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-03-21 18:01:17,361 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 7.717 seconds (JVM running for 8.23)
+2021-03-21 18:02:45,272 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-21 18:02:45,272 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-21 18:02:45,274 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-2] Completed initialization in 2 ms
+2021-03-21 18:02:45,331 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-2] Entering method : com.cg.hims.controller.LoginController.getUserById() with argument[s] = [13]
+2021-03-21 18:02:45,502 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-2] Exiting method: com.cg.hims.controller.LoginController.getUserById() with result = [FAILED toString()]
+2021-03-21 18:04:41,508 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-8] Entering method : com.cg.hims.controller.LoginController.getUserById() with argument[s] = [13]
+2021-03-21 18:04:41,512 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-8] Exiting method: com.cg.hims.controller.LoginController.getUserById() with result = [FAILED toString()]
+2021-03-21 18:06:20,589 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-3] Entering method : com.cg.hims.controller.LoginController.signup() with argument[s] = [User(user_id=0, user_name=aquaman2020, password=man@1234, first_name=Aqua, last_name=Man, email_id=def@gmail.com, contact_no=9090909090, address=Mumbai,India, role=Agent, admin=null, agent=null, policyHolder=null)]
+2021-03-21 18:06:20,661 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-3] Exiting method: com.cg.hims.controller.LoginController.signup() with result = <200 OK OK,Added!,[]>
+2021-03-21 18:18:27,518 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 23252 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 18:18:27,520 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 18:18:27,521 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 18:18:27,581 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-21 18:18:27,581 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-21 18:18:28,537 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 18:18:28,640 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 93 ms. Found 7 JPA repository interfaces.
+2021-03-21 18:18:29,831 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 18:18:29,845 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:18:29,846 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 18:18:29,846 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 18:18:29,922 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 18:18:29,923 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2341 ms
+2021-03-21 18:18:30,294 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 18:18:30,364 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-21 18:18:30,578 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-21 18:18:30,676 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-21 18:18:31,163 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-21 18:18:31,219 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 18:18:31,834 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.cg.hims.entities.Admin, at table: agent, for columns: [org.hibernate.mapping.Column(admin)]
+2021-03-21 18:18:31,835 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.cg.hims.entities.Admin, at table: agent, for columns: [org.hibernate.mapping.Column(admin)]
+2021-03-21 18:18:31,838 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2021-03-21 18:18:31,847 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2021-03-21 18:18:31,850 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2021-03-21 18:18:31,872 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-21 18:18:31,892 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.cg.hims.entities.Admin, at table: agent, for columns: [org.hibernate.mapping.Column(admin)]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1153)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:907)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cg.hims.application.HomeInsuranceManagementSystemApplication.main(HomeInsuranceManagementSystemApplication.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.cg.hims.entities.Admin, at table: agent, for columns: [org.hibernate.mapping.Column(admin)]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 22 common frames omitted
+Caused by: org.hibernate.MappingException: Could not determine type for: com.cg.hims.entities.Admin, at table: agent, for columns: [org.hibernate.mapping.Column(admin)]
+	at org.hibernate.mapping.SimpleValue.getType(SimpleValue.java:499)
+	at org.hibernate.mapping.SimpleValue.isValid(SimpleValue.java:466)
+	at org.hibernate.mapping.Property.isValid(Property.java:227)
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:624)
+	at org.hibernate.mapping.RootClass.validate(RootClass.java:267)
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:354)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:298)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 26 common frames omitted
+2021-03-21 18:32:48,162 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 17988 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 18:32:48,163 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 18:32:48,164 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 18:32:48,229 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-21 18:32:48,229 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-21 18:32:49,050 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 18:32:49,122 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 64 ms. Found 7 JPA repository interfaces.
+2021-03-21 18:32:50,221 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 18:32:50,231 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:32:50,231 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 18:32:50,231 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 18:32:50,315 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 18:32:50,315 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2085 ms
+2021-03-21 18:32:50,666 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 18:32:50,721 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-21 18:32:50,835 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-21 18:32:50,925 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-21 18:32:51,333 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-21 18:32:51,380 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 18:32:52,569 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,569 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "admin" does not exist, skipping
+2021-03-21 18:32:52,570 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,570 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "agent" does not exist, skipping
+2021-03-21 18:32:52,571 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,572 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "agent" does not exist, skipping
+2021-03-21 18:32:52,572 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,572 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "policy" does not exist, skipping
+2021-03-21 18:32:52,573 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,573 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "policyholder" does not exist, skipping
+2021-03-21 18:32:52,574 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,574 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "policyholder" does not exist, skipping
+2021-03-21 18:32:52,575 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,575 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "policyholder" does not exist, skipping
+2021-03-21 18:32:52,576 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,576 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "policyholder" does not exist, skipping
+2021-03-21 18:32:52,577 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,577 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "policyholder" does not exist, skipping
+2021-03-21 18:32:52,578 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,578 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "policyholder" does not exist, skipping
+2021-03-21 18:32:52,579 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,579 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] relation "quote" does not exist, skipping
+2021-03-21 18:32:52,581 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,581 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] table "admin" does not exist, skipping
+2021-03-21 18:32:52,582 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,582 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] table "agent" does not exist, skipping
+2021-03-21 18:32:52,583 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,583 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] table "policy" does not exist, skipping
+2021-03-21 18:32:52,584 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,584 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] table "policyholder" does not exist, skipping
+2021-03-21 18:32:52,585 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,585 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] table "property" does not exist, skipping
+2021-03-21 18:32:52,585 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,585 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] table "quote" does not exist, skipping
+2021-03-21 18:32:52,586 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,586 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] table "users" does not exist, skipping
+2021-03-21 18:32:52,587 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:32:52,587 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] sequence "hibernate_sequence" does not exist, skipping
+2021-03-21 18:32:52,657 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 18:32:52,665 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 18:32:52,683 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 18:32:53,840 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 18:32:54,085 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-21 18:32:54,559 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:32:54,582 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-03-21 18:32:55,078 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 7.205 seconds (JVM running for 7.693)
+2021-03-21 18:33:15,661 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 18:33:15,665 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2021-03-21 18:33:15,673 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2021-03-21 18:33:15,886 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 17988 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 18:33:15,886 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 18:33:15,886 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 18:33:16,281 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 18:33:16,301 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 19 ms. Found 7 JPA repository interfaces.
+2021-03-21 18:33:16,495 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 18:33:16,496 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:33:16,496 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 18:33:16,496 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 18:33:16,512 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 18:33:16,512 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 622 ms
+2021-03-21 18:33:16,578 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 18:33:16,581 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-03-21 18:33:16,623 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-03-21 18:33:16,623 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 18:33:16,889 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2021-03-21 18:33:16,890 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] constraint "fk6jfjyb7st0j7a4uh0ouq3tl0y" of relation "agent" does not exist, skipping
+2021-03-21 18:33:16,997 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 18:33:16,997 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 18:33:17,003 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 18:33:17,341 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 18:33:38,658 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 28940 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 18:33:38,661 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 18:33:38,662 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 18:33:38,723 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-21 18:33:38,723 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-21 18:33:39,591 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 18:33:39,661 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 61 ms. Found 7 JPA repository interfaces.
+2021-03-21 18:33:40,782 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 18:33:40,794 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:33:40,795 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 18:33:40,795 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 18:33:40,871 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 18:33:40,871 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2147 ms
+2021-03-21 18:33:41,184 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 18:33:41,245 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-21 18:33:41,397 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-21 18:33:41,483 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-21 18:33:42,060 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-21 18:33:42,102 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 18:33:43,111 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 18:33:43,117 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 18:33:43,128 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 18:33:44,114 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 18:33:44,307 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-21 18:33:44,733 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:33:44,754 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-03-21 18:33:45,206 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 6.861 seconds (JVM running for 7.372)
+2021-03-21 18:34:32,343 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-21 18:34:32,345 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-21 18:34:32,349 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-1] Completed initialization in 4 ms
+2021-03-21 18:34:32,389 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8081-exec-1] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-03-21 18:34:38,221 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-4] Entering method : com.cg.hims.controller.LoginController.AuthenticateUser() with argument[s] = [aquaman2020, man@1234]
+2021-03-21 18:34:38,298 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-4] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,User doesn't exist,[]>
+2021-03-21 18:35:21,170 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 18:35:21,174 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2021-03-21 18:35:21,178 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2021-03-21 18:35:21,353 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 28940 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 18:35:21,354 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 18:35:21,354 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 18:35:21,773 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 18:35:21,793 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 19 ms. Found 7 JPA repository interfaces.
+2021-03-21 18:35:21,996 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 18:35:21,997 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:35:21,997 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 18:35:21,997 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 18:35:22,021 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 18:35:22,021 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 663 ms
+2021-03-21 18:35:22,088 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 18:35:22,092 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-03-21 18:35:22,133 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-03-21 18:35:22,134 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 18:35:22,644 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 18:35:22,644 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 18:35:22,653 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 18:35:22,950 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 18:35:23,025 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-21 18:35:23,126 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:35:23,128 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-03-21 18:35:23,306 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 1.987 seconds (JVM running for 105.472)
+2021-03-21 18:35:23,310 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-21 18:35:34,752 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 23668 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 18:35:34,754 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 18:35:34,754 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 18:35:34,814 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-21 18:35:34,814 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-21 18:35:35,668 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 18:35:35,733 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 57 ms. Found 7 JPA repository interfaces.
+2021-03-21 18:35:36,878 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 18:35:36,887 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:35:36,887 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 18:35:36,887 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 18:35:36,976 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 18:35:36,976 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2161 ms
+2021-03-21 18:35:37,346 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 18:35:37,418 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-21 18:35:37,604 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-21 18:35:37,730 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-21 18:35:38,236 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-21 18:35:38,281 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 18:35:39,579 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 18:35:39,588 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 18:35:39,598 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 18:35:41,045 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 18:35:41,366 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-21 18:35:42,033 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:35:42,065 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-03-21 18:35:42,786 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 8.336 seconds (JVM running for 8.883)
+2021-03-21 18:35:51,961 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [http-nio-8081-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-21 18:35:51,961 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-21 18:35:51,964 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-2] Completed initialization in 3 ms
+2021-03-21 18:35:52,137 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-2] Entering method : com.cg.hims.controller.LoginController.signup() with argument[s] = [User(user_id=0, user_name=aquaman2020, password=man@1234, first_name=Aqua, last_name=Man, email_id=def@gmail.com, contact_no=9090909090, address=Mumbai,India, role=Agent, admin=null, agent=null, policyHolder=null)]
+2021-03-21 18:35:52,305 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-2] Exiting method: com.cg.hims.controller.LoginController.signup() with result = <200 OK OK,Added!,[]>
+2021-03-21 18:36:15,864 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-3] Entering method : com.cg.hims.controller.LoginController.AuthenticateUser() with argument[s] = [aquaman2020, man@1234]
+2021-03-21 18:36:15,909 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-3] Exiting method: com.cg.hims.controller.LoginController.AuthenticateUser() with result = <200 OK OK,Login Successful,[]>
+2021-03-21 18:38:42,492 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 24896 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 18:38:42,493 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 18:38:42,494 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 18:38:42,560 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-21 18:38:42,561 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-21 18:38:43,412 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 18:38:43,501 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 80 ms. Found 7 JPA repository interfaces.
+2021-03-21 18:38:44,686 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 18:38:44,705 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:38:44,706 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 18:38:44,707 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 18:38:44,815 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 18:38:44,816 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2255 ms
+2021-03-21 18:38:45,270 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 18:38:45,322 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-03-21 18:38:45,466 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-21 18:38:45,563 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-21 18:38:46,066 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-21 18:38:46,116 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 18:38:47,451 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 18:38:47,466 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 18:38:47,481 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 18:38:48,935 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 18:38:49,269 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-21 18:38:49,887 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-03-21 18:38:49,913 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-03-21 18:38:50,594 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 8.429 seconds (JVM running for 8.985)
+2021-03-21 18:38:51,883 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [http-nio-8081-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-21 18:38:51,884 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-3] Initializing Servlet 'dispatcherServlet'
+2021-03-21 18:38:51,887 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8081-exec-3] Completed initialization in 3 ms
+2021-03-21 18:38:51,961 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-3] Entering method : com.cg.hims.controller.LoginController.changePassword() with argument[s] = [aquaman2020, man@123]
+2021-03-21 18:38:52,188 DEBUG com.cg.hims.loggeraspect.UserLoggerAspect [http-nio-8081-exec-3] Exiting method: com.cg.hims.controller.LoginController.changePassword() with result = <200 OK OK,Password changed!,[]>
+2021-03-21 21:55:24,478 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h15m8s275ms722µs600ns).
+2021-03-21 22:00:50,643 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 22:00:50,647 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2021-03-21 22:00:50,652 INFO com.zaxxer.hikari.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2021-03-21 22:00:50,790 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 24896 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 22:00:50,790 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 22:00:50,790 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 22:00:51,157 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 22:00:51,176 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 17 ms. Found 7 JPA repository interfaces.
+2021-03-21 22:00:51,390 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 22:00:51,391 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 22:00:51,391 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 22:00:51,391 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 22:00:51,405 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 22:00:51,405 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 611 ms
+2021-03-21 22:00:51,473 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 22:00:51,477 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-03-21 22:00:51,511 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-03-21 22:00:51,511 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 22:00:51,956 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 22:00:51,957 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 22:00:51,962 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 22:00:52,227 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-21 22:00:52,282 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-21 22:00:52,418 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-03-21 22:00:52,421 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path '/springfox'
+2021-03-21 22:00:52,582 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Started HomeInsuranceManagementSystemApplication in 1.818 seconds (JVM running for 12130.973)
+2021-03-21 22:00:52,585 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-21 22:00:58,070 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-10] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 22:00:58,072 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-2 - Shutdown initiated...
+2021-03-21 22:00:58,073 INFO com.zaxxer.hikari.HikariDataSource [Thread-10] HikariPool-2 - Shutdown completed.
+2021-03-21 22:00:58,205 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Starting HomeInsuranceManagementSystemApplication using Java 1.8.0_281 on DJ with PID 24896 (C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes started by DJ Koneru in C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System)
+2021-03-21 22:00:58,205 DEBUG com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-03-21 22:00:58,205 INFO com.cg.hims.application.HomeInsuranceManagementSystemApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-21 22:00:58,467 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-21 22:00:58,486 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 18 ms. Found 7 JPA repository interfaces.
+2021-03-21 22:00:58,623 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-03-21 22:00:58,624 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-03-21 22:00:58,624 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-21 22:00:58,624 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-21 22:00:58,640 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/springfox] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-21 22:00:58,641 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 434 ms
+2021-03-21 22:00:58,697 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-21 22:00:58,701 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-03-21 22:00:58,732 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-03-21 22:00:58,732 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-21 22:00:59,174 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-21 22:00:59,174 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 22:00:59,181 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-21 22:00:59,346 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restResponseEntityExceptionHandler' defined in file [C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes\com\cg\hims\exceptions\RestResponseEntityExceptionHandler.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.cg.hims.exceptions.RestResponseEntityExceptionHandler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The declared package "com.cg.trg.exception" does not match the expected package "com.cg.hims.exceptions"
+
+2021-03-21 22:00:59,347 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-21 22:00:59,347 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Shutdown initiated...
+2021-03-21 22:00:59,353 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Shutdown completed.
+2021-03-21 22:00:59,354 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2021-03-21 22:00:59,362 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-21 22:00:59,381 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restResponseEntityExceptionHandler' defined in file [C:\Users\divya\Desktop\HomeInsuranceSystem\Home-Insurance-Management-System\Home-Insurance-Management-System\target\classes\com\cg\hims\exceptions\RestResponseEntityExceptionHandler.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.cg.hims.exceptions.RestResponseEntityExceptionHandler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The declared package "com.cg.trg.exception" does not match the expected package "com.cg.hims.exceptions"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.cg.hims.application.HomeInsuranceManagementSystemApplication.main(HomeInsuranceManagementSystemApplication.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.cg.hims.exceptions.RestResponseEntityExceptionHandler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The declared package "com.cg.trg.exception" does not match the expected package "com.cg.hims.exceptions"
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 23 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The declared package "com.cg.trg.exception" does not match the expected package "com.cg.hims.exceptions"
+
+	at com.cg.hims.exceptions.RestResponseEntityExceptionHandler.<init>(RestResponseEntityExceptionHandler.java:1)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 25 common frames omitted
